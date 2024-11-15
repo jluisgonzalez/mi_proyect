@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.radius{   
+   border-radius: 100%;
+}
+
+.nav-item a {
+    background-color: rgb(49, 132, 226);
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: 75px;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: -55px;
+    border-radius: 10px;
+    
+}
+
+.contenedor figure {
+    position: relative;
+}
+
+.contenedor figure img {
+   
+    width: 100%;
+    height: 700px;
+    margin-right: 0px ;
+}
+
+.contenedor figure .capa {
+    margin-left: 10% ;
+    position: absolute;
+    top: 100px;
+}
+.capa {
+    font-size: 25px;
+}
+h3 {
+    font-size: 45px;
+    font-weight: bolder
+    
+}
+.éxit {
+    background-color:rgb(49, 132, 226) ;
+    width: 100%;
+    height: 100px;
+}
+h4 {
+    font-size: 40px;
+    position: relative;
+    top: 15px;
+    right: -300px;
+    font-weight: bolder;
+    color: white;
+
+}
+.credit {
+    font-size: 25px;
+    font-weight: bold;
+   
+}
+.credito {
+    background-color: rgba(202, 221, 221, 0.699);
+    width: 450px;
+    height:360px ;
+    position: relative;
+    top: 95px;
+    left: 10%;
+    padding: 100px;
+    margin: 5px;
+  
+  
+}
+   
+.credito-1 {
+   
+    width: 450px;
+    height:360px ;
+    position: absolute;
+    top: 125%;
+    left: 54%;
+    padding: 100px;
+   
+    
+}
+
+.credito-2 {
+    width: 450px;
+    height:360px ;
+    position: relative;
+    top: 60px;
+    right:-1%;
+    padding: 100px;
+    margin: 50px;
+}
+.credito-3 {
+   padding: 50px;
+   background-color: rgba(202, 221, 221, 0.699);
+   width: 450px;
+   height:360px ;
+   position: absolute;
+    top: 200%;
+    left: 60%;
+    padding: 100px;
+    
+}
+.credito-4 {
+    background-color: rgba(202, 221, 221, 0.699);
+    width: 450px;
+   height:360px ;
+    position: relative;
+    top: 252px;
+    left: 10%;
+    padding: 100px;
+    margin: 5px;
+}
+.credito-5 {
+    width: 450px;
+    height:360px ;
+    position: absolute;
+    top: 255%;
+    left: 54%;
+    padding: 100px;
+}
+.paragrafh {
+    font-size: 17px;
+}
+.log {
+    position: absolute;
+    top: 150px;
+    left: 86%;
+}
+
+h1 {
+  position: relative;
+  top: 246px;
+  left: 43%;
+   margin-top: -40px;
+}
+
+.invers {
+    border-radius: 50px;
+    position: relative;
+    top: 359px;
+    background-color: rgb(7, 209, 142);
+    margin-left:80px ;
+    margin-right:80px ;
+
+    height: 600px;
+    
+}
+.invers1 {
+    position: relative;
+    bottom: 126px;
+    right: -1061px;
+}
+   
+.invers2 {
+    position: relative;
+    bottom:123px ;
+    right: -1061px;
+}
+
+.invers3 {
+    position: relative;
+    bottom: 409px;
+    right: -1209px;
+}
+
+.invers4 {
+    position:absolute;
+    top: 352%;
+    left: 189px;
+}
+
+.invers5 {
+    position:absolute;
+   top: 340%;
+  left: 340px;
+}
+
+.invers6 {
+    position: absolute;
+    top: 365%;
+    left: 335px;
+}
+
+
+
+
