@@ -148,7 +148,8 @@ h1 {
 .invers {
     border-radius: 50px;
     position: relative;
-    top: 359px;
+    top: 329px;
+    bottom: 20px;
     background-color: rgb(7, 209, 142);
     margin-left:80px ;
     margin-right:80px ;
@@ -192,6 +193,37 @@ h1 {
     left: 337px;
 }
 
+.pie-dp {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    background-color: #212529;
+    color: #f8f9fa;
+    padding: 2rem;
+    margin-top: 0;
+}
 
+.footer-col h5{
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
 
+.footer-col p, 
+.footer-col li{
+    font-size: 0.9rem;
+}
 
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer-col a {
+    color: #adb5db;
+    text-decoration: none;
+}
+
+footer-col a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
