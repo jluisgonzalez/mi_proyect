@@ -4,22 +4,24 @@
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
 }
+body{
+    overflow-x: hidden;
+}
 
 .radius{   
    border-radius: 100%;
 }
 
 .nav-item a {
-    background-color: rgb(49, 132, 226);
     width: 70%;
     display: flex;
-    justify-content: center;
     margin: 75px;
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     position: relative;
     top: -55px;
     border-radius: 10px;
+    box-shadow: #cfd2d5;
     
 }
 
@@ -39,20 +41,89 @@
     position: absolute;
     top: 100px;
 }
-.capa {
-    font-size: 25px;
+
+.banner a {
+    text-decoration: none !important;
+    color: inherit;
 }
-h3 {
-    font-size: 45px;
-    font-weight: bolder
+
+
+.banner {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+.banner {
+    all: unset;
+}
+
+
+.prim, .secun {
+    padding: 14px 30px;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+/* BOTÓN PRINCIPAL */
+.prim {
+    background: linear-gradient(135deg, #1F7A4D, #2E86C1);
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.prim:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+
+}
+
+/* BOTÓN SECUNDARIO */
+.secun {
+      background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.secun:hover {
+    background: rgba(255, 255, 255, 0.3);
     
 }
+
+.capa {
+    font-size: 24px;
+    max-width: 600px;
+}
+h1 {
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
 .éxit {
-    background-color:rgb(49, 132, 226) ;
+    background: linear-gradient(135deg, #1F7A4D, #2E86C1);
+    color: white;
+    
     width: 100%;
     height: 100px;
 }
-h4 {
+.h4 {
     font-size: 40px;
     position: relative;
     top: 15px;
@@ -66,17 +137,29 @@ h4 {
     font-weight: bold;
    
 }
-.credito {
-    background-color: rgba(202, 221, 221, 0.699);
-    width: 450px;
-    height:360px ;
+.credi {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    height: 450px;
+    margin: 10px;
+    gap: 60px;
+}
+
+.credi-in {
     position: relative;
-    top: 91px;
-    left: 10%;
-    padding: 100px;
-    margin: 5px;
-  
-  
+    top: 6%;
+    margin: 10px;
+    padding: 5px;
+    
+}
+.credi-tex {
+    position: relative;
+    top: 30%;
+    margin: 10px;
+    padding: 5px;
+    
 }
    
 .credito-1 {
@@ -84,9 +167,10 @@ h4 {
     width: 450px;
     height:360px ;
     position: absolute;
-    top: 128%;
+    top: 125%;
     left: 54%;
     padding: 100px;
+    
    
     
 }
@@ -95,135 +179,213 @@ h4 {
     width: 450px;
     height:360px ;
     position: relative;
-    top: 60px;
+    top: 37px;
     right:-1%;
     padding: 100px;
     margin: 50px;
+    
 }
 .credito-3 {
    padding: 50px;
-   background-color: rgba(202, 221, 221, 0.699);
+   background-color: whitesmoke;
    width: 450px;
    height:360px ;
    position: absolute;
-    top: 208%;
+    top: 204%;
     left: 60%;
     padding: 100px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
     
 }
 .credito-4 {
-    background-color: rgba(202, 221, 221, 0.699);
+    background-color: whitesmoke;
     width: 450px;
    height:360px ;
     position: relative;
-    top: 252px;
+    top: 234px;
     left: 10%;
     padding: 100px;
     margin: 5px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
 }
 .credito-5 {
     width: 450px;
     height:360px ;
     position: absolute;
-    top: 265%;
+    top: 259%;
     left: 54%;
     padding: 100px;
 }
-.paragrafh {
-    font-size: 17px;
+.paragraph {
+    font-size: 18px;
+    line-height: 1.6;
 }
 .log {
     position: absolute;
-    top: 150px;
-    left: 86%;
+    top: 49px;
+    left: 64%;
+  
+}
+img{
+    box-shadow: 0px 4px 15px rgba(103, 103, 103, 0.269);
+    border-radius: 30px;
 }
 
-h1 {
-  position: relative;
-  top: 246px;
-  left: 43%;
-   margin-top: -40px;
+
+
+.footer {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #ffffff;
+    padding: 50px 20px 20px 20px;
 }
 
-.invers {
-    border-radius: 50px;
-    position: relative;
-    top: 329px;
-    bottom: 20px;
-    background-color: rgb(7, 209, 142);
-    margin-left:80px ;
-    margin-right:80px ;
-    width: 93%;
-    height: 600px;
-    
-}
-.invers1 {
-    position: relative;
-    bottom: 126px;
-    right: -1040px;
-}
-   
-.invers2 {
-    position: relative;
-    bottom:123px ;
-    right: -1050px;
+.footer {
+    background: linear-gradient(133deg, #1F7A4D, #2E86C1);
+    color: #ffffff;
+    padding: 60px 20px 25px;
+    font-family: 'Segoe UI', sans-serif;
 }
 
-.invers3 {
-    position: relative;
-    bottom: 409px;
-    right: -1208px;
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 
-.invers4 {
-    position:absolute;
-    top: 366%;
-    left: 174px;
+.footer-col {
+    flex: 1;
+    min-width: 260px;
 }
 
-.invers5 {
-    position:absolute;
-   top: 354%;
-  left: 341px;
+.footer-col h3,
+.footer-col h4 {
+    margin-bottom: 18px;
+    font-weight: 600;
 }
 
-.invers6 {
-    position: absolute;
-    top: 380%;
-    left: 337px;
+.footer-col p {
+    line-height: 1.7;
+    font-size: 15px;
+    opacity: 0.9;
 }
 
-.pie-dp {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    background-color: #212529;
-    color: #f8f9fa;
-    padding: 2rem;
-    margin-top: 0;
-}
-
-.footer-col h5{
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
-}
-
-.footer-col p, 
-.footer-col li{
-    font-size: 0.9rem;
-}
 
 .footer-col ul {
     list-style: none;
     padding: 0;
 }
 
-footer-col a {
-    color: #adb5db;
-    text-decoration: none;
+.footer-col ul li {
+    margin-bottom: 10px;
 }
 
-footer-col a:hover {
+.footer-col ul li a {
+    text-decoration: none;
     color: #ffffff;
-    text-decoration: underline;
+    transition: 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    padding-left: 6px;
+    opacity: 0.8;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    margin-top: 40px;
+    padding-top: 18px;
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+@media (max-width: 450px) 
+
+
+{
+
+  /* 🔒 Elimina scroll horizontal */
+  html, body {
+    overflow-x: hidden;
+    width: 80%;
+  }
+  .credito-5 {
+    position: static; 
+     overflow-x: hidden;  /* Quita absolute */
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    top: auto;
+    left: auto;
+  }
+
+  .log {
+    position: static;   /* Quita absolute */
+    display: block;
+     overflow-x: hidden;
+    margin: 10px auto;
+    left: auto;
+    top: auto;
+  }
+
+
+  /* Contenedor del banner */
+  .contenedor {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  /* Figure limpio */
+  figure {
+    margin: 0;
+    padding: 0;
+    width:100%;
+  }
+
+  figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+  }
+  .credi-in img {
+    max-width: 350px;
+  }
+  /* Texto superpuesto */
+  .capa {
+    width:100%;
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .capa h1 {
+    font-size: 1.6rem;
+  }
+
+  .capa p {
+    font-size: 0.95rem;
+  }
+
+    .éxit {
+    height: auto;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .h4 {
+    font-size: 18px;
+    position: static;   /* elimina el desplazamiento */
+    right: auto;
+    top: auto;
+    text-align: center;
+  }
+
 }

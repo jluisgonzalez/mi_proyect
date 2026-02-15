@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #2e3d36;
+    line-height: 1.6;
+}
+
+.quienes-somos {
+    padding: 80px 10%;
+}
+
+.contenedor {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+/* TEXTO */
+
+.texto {
+    flex: 1.2;
+}
+
+.texto h1 {
+    font-size: 42px;
+    color: #2f6f4f;
+    margin-bottom: 25px;
+}
+
+.texto p {
+    margin-bottom: 18px;
+    font-size: 20px;
+}
+
+.bloques {
+    margin-top: 100px;
+   
+}
+
+.card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+
+
+.card h2 {
+    margin-bottom: 20px;
+    color: #1f6f5b;
+}
+
+.valores-lista {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 15px 40px;
+    padding-left: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.valores-lista li {
+    font-size: 20px;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+    .valores-lista {
+        grid-template-columns: 1fr; /* 1 columna en móvil */
+    }
+}
+
+
+/* IMÁGENES */
+
+.imagenes {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.imagenes img {
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .texto h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .texto {
+        text-align: center;
+    }
+
+    .imagenes {
+        margin-top: 40px;
+    }
+}

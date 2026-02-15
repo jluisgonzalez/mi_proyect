@@ -1,0 +1,118 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f7fa;
+    color: #2c3e50;
+}
+
+/* SECCIÓN PRINCIPAL */
+.innovacion {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #e6f4f1, #ffffff);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* GRID */
+.innovacion-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* CONTENIDO TEXTO */
+.innovacion-content h1 {
+    font-size: 42px;
+    color: #1F7A4D;
+    margin-bottom: 20px;
+}
+
+.lead {
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.beneficios {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.beneficios li {
+    font-size: 18px;
+    margin-bottom: 12px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.beneficios li::before {
+    content: "●";
+    position: absolute;
+    left: 0;
+    color: #2E86C1;
+    font-size: 18px;
+}
+
+.mensaje {
+    font-size: 18px;
+    font-weight: 500;
+    color: #34495e;
+}
+
+/* IMÁGENES */
+.innovacion-images {
+    display: grid;
+    gap: 25px;
+}
+
+.innovacion-images img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    transition: 0.4s ease;
+}
+
+.innovacion-images img:hover {
+    transform: scale(1.04);
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .innovacion-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .innovacion-content h1 {
+        font-size: 34px;
+    }
+
+    .lead {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .innovacion {
+        padding: 70px 15px;
+    }
+
+    .beneficios li {
+        font-size: 16px;
+    }
+
+    .mensaje {
+        font-size: 16px;
+    }
+}

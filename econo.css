@@ -1,0 +1,130 @@
+/* SECCIÓN ECONOMÍA */
+.economia {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #f4f7f6, #e8f1ee);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* GRID PRINCIPAL */
+.economia-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* TEXTO */
+.economia-content h1 {
+    font-size: 42px;
+    color: #266847;
+    margin-bottom: 20px;
+}
+
+.lead {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+
+.beneficios {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.beneficios li {
+    margin-bottom: 12px;
+    font-size: 18px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.cta {
+  padding: 10px;
+}
+
+/* ===== CTA ===== */
+
+
+.cta-section h3 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.btn-cta {
+    display: inline-block;
+    padding: 14px 35px;
+    border-radius: 40px;
+    background: linear-gradient(135deg, #1F7A4D, #2E86C1);
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.beneficios li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #2E86C1;
+    font-weight: bold;
+}
+
+.mensaje {
+    font-size: 18px;
+    font-weight: 500;
+    color: #34495e;
+}
+
+/* IMÁGENES */
+.economia-images {
+    display: grid;
+    gap: 25px;
+}
+
+.economia-images img {
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    transition: 0.4s ease;
+}
+
+.economia-images img:hover {
+    transform: scale(1.03);
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .economia-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .economia-content h1 {
+        font-size: 34px;
+    }
+
+    .lead {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .economia {
+        padding: 70px 15px;
+    }
+
+    .beneficios li {
+        font-size: 16px;
+    }
+
+    .mensaje {
+        font-size: 16px;
+    }
+}
