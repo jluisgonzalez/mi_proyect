@@ -58,10 +58,10 @@ body {
 .btn {
     display: inline-block;
     padding: 12px 25px;
-    background-color: #2f6f4f;
+    background: linear-gradient(135deg, #1F7A4D, #2E86C1);
     color: white;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 50px;
     transition: 0.3s ease;
 }
 

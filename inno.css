@@ -27,8 +27,9 @@ body {
 .innovacion-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    gap: 20%;
     align-items: center;
+    border-radius: 40px;
 }
 
 /* CONTENIDO TEXTO */

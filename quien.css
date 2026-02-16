@@ -5,11 +5,16 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f7f6;
-    color: #2e3d36;
-    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #1f2d2a;
+    line-height: 1.7;
+    background: linear-gradient(135deg, #f8faf9 0%, #eef3f1 50%, #e8efec 100%);
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
 }
+
+
 
 .quienes-somos {
     padding: 80px 10%;
@@ -26,11 +31,22 @@ body {
 .texto {
     flex: 1.2;
 }
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 1.1;
+}
+
 
 .texto h1 {
-    font-size: 42px;
-    color: #2f6f4f;
+    font-size: 60px;
+    color: #36654d;
     margin-bottom: 25px;
+}
+ 
+p {
+    max-width: 650px;
 }
 
 .texto p {
@@ -39,18 +55,28 @@ body {
 }
 
 .bloques {
-    margin-top: 100px;
+    margin-top: 34px;
    
 }
 
 .card {
     background: #ffffff;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-    max-width: 600px;
-    margin: 20px auto;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.05),
+        0 4px 10px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s ease;
 }
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.08),
+        0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+
 
 
 

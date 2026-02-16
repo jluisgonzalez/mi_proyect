@@ -316,7 +316,7 @@ img{
   }
   .credito-5 {
     position: static; 
-     overflow-x: hidden;  /* Quita absolute */
+    overflow-x: hidden;  /* Quita absolute */
     width: 100%;
     height: auto;
     padding: 20px;
